@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "predev": "tsc",
-    "dev": "node ./dist/index.js"
+    "prerun": "tsc",
+    "run": "node ./dist/index.js"
   },
   "keywords": [],
   "author": "",
