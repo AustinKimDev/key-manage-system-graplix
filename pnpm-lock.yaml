@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      graplix:
+        specifier: ^0.1.2
+        version: 0.1.2
     devDependencies:
       '@eslint/js':
         specifier: ^9.21.0
@@ -318,6 +322,9 @@ packages:
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
 
+  graplix@0.1.2:
+    resolution: {integrity: sha512-S6z00z+/8CVtZfevWil3JFbaSumBJdXAh+z5LZuUgm09RVy/uoSqeOZ3+G5JjaPEEMVL2iD5BUUitsd5Mwp1+Q==}
+
   has-flag@4.0.0:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
@@ -436,6 +443,9 @@ packages:
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
+  remeda@2.20.2:
+    resolution: {integrity: sha512-38pfm5aUq6mUkNYbt7TdY2WEk9mSqRVV+6UsoTjabwmbu8obLbh8sYYSX2WQ3W4u6EYp3XxUKqIiwGFZu+OY9g==}
+
   resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
     engines: {node: '>=4'}
@@ -481,6 +491,10 @@ packages:
   type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
     engines: {node: '>= 0.8.0'}
+
+  type-fest@4.35.0:
+    resolution: {integrity: sha512-2/AwEFQDFEy30iOLjrvHDIH7e4HEWH+f1Yl1bI5XMqzuoCUqwYCdxachgsgv0og/JdVZUhbfjcJAoHj5L1753A==}
+    engines: {node: '>=16'}
 
   typescript-eslint@8.24.1:
     resolution: {integrity: sha512-cw3rEdzDqBs70TIcb0Gdzbt6h11BSs2pS0yaq7hDWDBtCCSei1pPSUXE9qUdQ/Wm9NgFg8mKtMt1b8fTHIl1jA==}
@@ -848,6 +862,10 @@ snapshots:
 
   graphemer@1.4.0: {}
 
+  graplix@0.1.2:
+    dependencies:
+      remeda: 2.20.2
+
   has-flag@4.0.0: {}
 
   ignore@5.3.2: {}
@@ -946,6 +964,10 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
+  remeda@2.20.2:
+    dependencies:
+      type-fest: 4.35.0
+
   resolve-from@4.0.0: {}
 
   reusify@1.0.4: {}
@@ -979,6 +1001,8 @@ snapshots:
   type-check@0.4.0:
     dependencies:
       prelude-ls: 1.2.1
+
+  type-fest@4.35.0: {}
 
   typescript-eslint@8.24.1(eslint@9.21.0)(typescript@5.7.3):
     dependencies:
